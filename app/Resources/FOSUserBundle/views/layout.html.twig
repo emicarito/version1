@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CS Symfony Members{% endblock %}
+
+{% block body %}
+<div id="wrapper">
+    <div id="container">
+    {% block fos_user_content %}{% endblock %}
+    </div>
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+
+    <link href="{{ asset('bundles/app/css/site.css') }}" type="text/css" rel="stylesheet" />
+
+{% endblock %}
